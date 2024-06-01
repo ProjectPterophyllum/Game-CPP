@@ -32,3 +32,4 @@
 *.app
 GameClient
 GameServer
+.vscode/settings.json
