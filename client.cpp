@@ -68,7 +68,7 @@ int main() {
         std::cout << buffer << std::endl;
 
         // Если игрок выиграл или проиграл, закрываем соединение и выходим из цикла
-        if (std::string(buffer, 8) == "You win!" || std::string(buffer, 8) == "You lose") {
+        if (std::string(buffer, 9) == "You win!" || std::string(buffer, 9) == "You lose") {
             close(sock);
             break;
         }
