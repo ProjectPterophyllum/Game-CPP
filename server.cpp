@@ -38,12 +38,12 @@ void handle_game(int client1_fd, int client2_fd)
             if (client_fd == client1_fd)
             {
                 close(client2_fd);
-                send(client1_fd, "Waiting for another player...", 26, 0);
+                send(client1_fd, "Waiting for another player...", 30, 0);
             }
             else
             {
                 close(client1_fd);
-                send(client2_fd, "Waiting for another player...", 26, 0);
+                send(client2_fd, "Waiting for another player...", 30, 0);
             }
             return;
         }
